@@ -6,19 +6,41 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
     <title>trial_TypeScript+Threejs</title>
     <!-- スタイルシートを読み込む -->
+    <link rel="stylesheet" href="styles/page_top.css">
     <link rel="stylesheet" href="style.css" />
   </head>
   <body>
-    <h1>trial_TypeScript+Threejs</h1>
+    <header>
+      <h1>trial_TypeScript+Threejs</h1>
+      <div>
+        <p>紹介サイトを参考に、TypeScriptでThree.jsを利用してみる</p>
+        <p><span class="label">参考サイト：</span>
+          <a href="https://ics.media/entry/16329/" target="_blank" rel="noopener noreferrer">ics.media</a>、
+          <a href="https://threejs.org/examples/" target="_blank" rel="noopener noreferrer">ThreeJS examples</a>
+        </p>
+      </div>
+    </header>
     <div id="loadModel">
-      <p><span class="label">Demo03:</span>Model Loader(STL)</p>
+      <p><span class="label">Demo03:</span>Model Loader(STL)
+        <span>（<a href="#useOrbitCtrl">▼next</a>）</span>
+      </p>
     </div>
     <div id="useOrbitCtrl">
-      <p><span class="label">Demo02:</span>use OrbitControl</p>
+      <p><span class="label">Demo02:</span>use OrbitControl
+        <span>（<a href="#flutterCube">▼next</a>）</span>
+      </p>
     </div>
     <div id="flutterCube">
-      <p><span class="label">Demo01:</span>fluttering Cube</p>
+      <p><span class="label">Demo01:</span>fluttering Cube
+        <span>（<a href="#">▲top</a>）</span>
+      </p>
     </div>
+    <footer>
+      <div id="page_top" class="btn_to_top"><p>▲Top</p></div>
+    </footer>
     <script src="bundle.js"></script>
+    <script src="./scripts/vendors/anime.min.js"></script>
+    <script src="./scripts/libs/page-top.js"></script>
+    <script src="./scripts/main.js"></script>
   </body>
 </html>

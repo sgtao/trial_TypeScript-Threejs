@@ -32,7 +32,7 @@ export default function load_Model_STL(el: string): void {
     cameraTarget = new THREE.Vector3(0, -0.25, 0)
 
     scene = new THREE.Scene()
-    
+
     scene.background = new THREE.Color(0x72645b)
     scene.fog = new THREE.Fog(0x72645b, 2, 15)
 
